@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(57, 26, 233);
+    background: linear-gradient(90deg, rgba(57, 26, 233, 1) 0%, rgba(23, 42, 152, 1) 29%, rgba(18, 22, 119, 1) 67%, rgba(11, 11, 77, 1) 100%);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+}
+
+.info-text {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 40px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.note {
+    height: 200px;
+    padding: 17px;
+    border-radius: 15px;
+    resize: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: rgb(196, 189, 189);
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .1);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.note::placeholder {
+    color: rgb(196, 189, 189);
+    opacity: 30%;
+}
+
+.note:hover,
+.note:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 300ms ease;
+}
+
+.btn {
+    height: 200px;
+    font-size: 50px;
+    border-color: rgb(0, 76, 255);
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 15px;
+}
+
+.btn:hover {
+   background: rgba(255,255,255,0.3);
+   color: rgba(0,0,0,0.6);
+    transition: all 300ms ease;
+}
+
